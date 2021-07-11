@@ -6,15 +6,11 @@ package ucf.assignments;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-<<<<<<< HEAD
 import javafx.scene.control.ListView;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
-=======
-import javafx.scene.control.Button;
->>>>>>> parent of 7ba6887 (14th Commit: Done with NewFile and OpenFile functions.)
 
 public class mainController {
     //Limit of 100 lists total
@@ -22,7 +18,6 @@ public class mainController {
     String exportFilePath = "C:\\Users\\khoa1\\Desktop\\exported_list.txt";
 
     @FXML
-<<<<<<< HEAD
     private ListView ListOfTodoList = new ListView();
 
     @FXML
@@ -34,30 +29,6 @@ public class mainController {
             String todoListName = (String) todoList.keySet().toArray()[0];
             ListOfTodoList.getItems().add(todoListName);
         }
-=======
-    private Button newFileButton;
-
-    @FXML
-    private Button openFileButton;
-
-    @FXML
-    private Button exportFileButton;
-
-    @FXML
-    private Button newListButton;
-
-    @FXML
-    private Button openListButton;
-
-    @FXML
-    private Button deleteListButton;
-
-    @FXML
-    void newFile(ActionEvent event) {
-        //Once newFileButton is clicked, user will be directed to saveTodo.fxml to enter a file name to save to local directory.
-        //changeScene(saveTodo.fxml) will be used
-        //New File variable will be created to create empty text file using file path from user -> Return exception if file cannot be created
->>>>>>> parent of 7ba6887 (14th Commit: Done with NewFile and OpenFile functions.)
     }
 
     @FXML
@@ -73,7 +44,6 @@ public class mainController {
         //temporary ArrayList of Maps will be put into bigger ArrayList of ArrayLists of Maps
         //Populate listView in mainTodo.fxml with names of each list
         //New data will be added to the same ArrayList of ArrayLists of Maps if user wishes to open another file
-<<<<<<< HEAD
 
         ArrayList<LinkedHashMap<String, LinkedHashMap<String, LinkedHashMap<String, String>>>> bigList = new ArrayList<>();
 
@@ -88,8 +58,6 @@ public class mainController {
             String todoListName = (String) todoList.keySet().toArray()[0];
             ListOfTodoList.getItems().add(todoListName);
         }
-=======
->>>>>>> parent of 7ba6887 (14th Commit: Done with NewFile and OpenFile functions.)
     }
 
     @FXML
