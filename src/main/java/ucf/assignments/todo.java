@@ -25,9 +25,9 @@ public class todo extends Application {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("mainTodo.fxml"));
             Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.setTitle("Todo List Management System");
-            stage.show();
+            primaryStage.setScene(scene);
+            primaryStage.setTitle("Todo List Management System");
+            primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();
         }
